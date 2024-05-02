@@ -1,0 +1,26 @@
+import Image from 'next/image'
+import clip from 'images/clip.png'
+import fade from 'images/fade.png'
+import { Card, Cards } from 'nextra-theme-docs'
+
+# Wide
+
+Wide is short for widescreen.
+
+It is included in **Hit Gun** mode and allows you to produce horizontal content.
+
+It has additional features such as **Clip** and **Fade**.
+
+If you wish, you can create long videos by combining the content you produce into a single video with the clip feature.
+
+
+
+  <Cards num={2}>
+              <Card title="Klip" image href="/hitgun/genis/klip">
+                        <Image src={clip} />
+              </Card>
+              <Card title="Fade" image href="/hitgun/genis/fade">
+                        <Image src={fade} />
+              </Card>
+
+            </Cards>

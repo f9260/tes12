@@ -1,0 +1,43 @@
+import Image from 'next/image'
+import videobirlestir from 'images/mergedvideo.png'
+import gorselekle from 'images/addimage.png'
+import gorselekletransparan from 'images/addimagetransparent.png'
+import logoekle from 'images/addlogo.png'
+import sesekle from 'images/addsound.png'
+import introoutroekle from 'images/addintrooutro.png'
+import { Card, Cards } from 'nextra-theme-docs'
+
+
+# Options
+
+There are numerous options available to personalize your work and create different designs.
+
+
+
+  <Cards >
+              <Card title="Video Birleştir" image href="/ortak/secenekler/video-birlestir">
+                        <Image src={videobirlestir} />
+              </Card>
+              <Card title="Görsel Ekle" image href="/ortak/secenekler/gorsel-ekle">
+                        <Image src={gorselekle} />
+              </Card>
+              <Card title="Görsel Ekle(T)" image href="/ortak/secenekler/gorsel-ekle-t">
+                        <Image src={gorselekletransparan} />
+              </Card>
+
+            </Cards>
+
+
+            
+  <Cards >
+              <Card title="Logo Ekle" image href="/ortak/secenekler/logo-ekle">
+                        <Image src={logoekle} />
+              </Card>
+              <Card title="Ses Ekle" image href="/ortak/secenekler/ses-ekle">
+                        <Image src={sesekle} />
+              </Card>
+              <Card title="Intro/Outro Ekle" image href="/ortak/secenekler/intro-outro-ekle">
+                        <Image src={introoutroekle} />
+              </Card>
+
+            </Cards>

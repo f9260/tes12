@@ -1,0 +1,85 @@
+# Interval
+
+import Image from 'next/image'
+import metotaralik from 'app-images/metot-aralık.jpg'
+import metotaralikrastgele from 'app-images/metot-aralık-rastgele.jpg'
+import metotaraliksirali from 'app-images/metot-aralık-sıralı.jpg'
+import metotaraliksiralisure from 'app-images/metot-aralık-sıralı-süre.jpg'
+
+
+The interval method allows for work to be done on entered time intervals.
+
+It has two sub-modes: **Random** and **Regular**.
+
+<Image src={metotaralik} />
+
+## Random
+When the Random mode is active, content production is carried out within the entered time intervals for the number of productions written in the "**How Many**" section.
+
+###Example
+Settings for a 40-minute YouTube video are as follows:
+
+<Image src={metotaralikrastgele} />
+
+
+| URL | youtube.com/video-id |
+| :----- | :----: |
+| How Many| 3 |
+| Intervals | ```2:14-3:21```,```6:16-9:19```,```17:21-24:18```,```34:13-39:21```    |
+| Video Duration/Fixed | 15 |
+| Method | Interval/Random |
+
+
+#### Result
+
+
+| Intervals | Number of Produced Videos |
+| :----- | :----: |
+| 2:14-3:21 | 3 |
+| 6:16-9:19 | 3 |
+| 17:21-24:18 | 3 |
+| 34:13-39:21 | 3 |
+
+
+For each time interval, a total of 3 videos of 15 seconds each are randomly produced.
+
+At the end of this process, we have a total of **12 videos**.
+
+
+## Regular
+<Image src={metotaraliksirali} />
+
+When the Regular option is active, content production occurs for **all** entered time intervals.
+
+### Example
+
+Let's continue with a few minor changes to the example provided above.
+
+Here are the settings for a 40-minute YouTube video:
+
+<Image src={metotaraliksiralisure} />
+
+| URL | youtube.com/video-id |
+| :----- | :----: |
+| Intervals | ```2:14-3:21```,```6:16-9:19```,```17:21-20:18```,```34:13-36:21```    |
+| Video Duration/Fixed | 45 |
+| Method | Interval/Regular  |
+
+
+#### Result
+
+
+| Aralık | Üretim Yapılan Süreler | Üretilen Video Sayısı |
+| :----- | :----: | :----: |
+| 2:14-3:21 | ```2:14-2:59```,```2:59-3:44``` | 2 |
+| 6:16-9:19 | ```6:16-7:01```,```7:01-7:46```,```7:46-8:31```,```8:31-9:16```,```9:16-10:01``` | 5 |
+| 17:21-20:18 | ```17:21-18:06```,```18:06-18:51```,```18:51-19:34```,```19:34-20:19``` | 4 |
+| 34:13-36:21 | ```34:13-34:58```,```34:58-35:43```,```35:43-36:28``` | 3 |
+
+
+
+As seen, different numbers of contents were created for different time intervals.
+
+Each created content is 45 seconds long.
+
+When the duration of the last content exceeds the entered time interval, content production is terminated.

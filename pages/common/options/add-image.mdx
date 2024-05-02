@@ -1,0 +1,55 @@
+# Add Image
+
+It is an option where you can add image to your videos.
+
+You can use up to a total of 5 images.
+
+Add the images you want to use in a folder sequentially and define the folder in the system from the Images section.
+
+Select the number of images you want to use from the section labeled Image Count.
+
+Then you can create details from the Image Settings section.
+
+
+
+<video autoPlay muted loop controls>
+  <source src="/gorselekle.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+
+The settings for Width, Height, X, and Y coordinates of the added images are made here.
+
+According to the number of images you have added, you can create settings for each image using the "**::**" expression.
+
+### Example
+
+Let's assume that we want to add 4 images to our project.
+
+We put the 4 images into a folder and defined it in the system.
+
+Then we set the Image Count to 4.
+
+
+** -- buralara step falan yapılabilir -- **
+
+We need to enter the resolution of our images and the desired positions where they should be placed.
+
+-- görsellerle ifade edilecek --
+
+Let's create example resolutions and positions.
+
+import { Callout } from 'nextra/components'
+ 
+<Callout type="info" emoji="ℹ️">
+  The order of operations should be: Width, Height, X, Y.
+</Callout>
+
+`250,420,50,290`::`400,120,140,80`::`110,270,35,65`::`350,200,45,90`
+
+As a result of these settings, 4 images will be integrated into the video at the desired resolutions and positions.
+
+
+
+

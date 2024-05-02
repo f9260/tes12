@@ -1,0 +1,41 @@
+import Image from 'next/image'
+import metotrastgele from 'app-images/metot-rastgele.jpg'
+
+# Random
+
+The random method allows for the selection of a random duration from the target video.
+
+For example, let's assume we want to create 9 pieces of content from a 2-hour YouTube video.
+
+
+<Image src={metotrastgele} />
+
+
+### Example
+
+| URL | youtube.com/video-id |
+| :----- | :----: |
+| How Many |  9   |
+| Video Duration/Fixed | 30 |
+| Method | Random  |
+
+
+After the above settings, 9 random start times are determined within the 2-hour video, and 30-second content pieces are created.
+
+
+### Result
+
+| Video | Start | End |
+| :-----: | :----: | :----: | 
+| 1 | 14:36 | 15:06 |
+| 2 | 25:13 | 25:43 |
+| 3 | 29:42 | 30:12 |
+| 4 | 43:17 | 43:47 |
+| 5 | 1:11:24 | 1:11:54 |
+| 6 | 1:32:19 | 1:32:49 |
+| 7 | 1:43:05 | 1:43:35 |
+| 8 | 1:51:44 | 1:51:14 |
+| 9 | 1:55:32 | 1:56:02 |
+
+
+9 videos are created separately in the time intervals listed in the table and saved to the designated folder in **mp4** format.

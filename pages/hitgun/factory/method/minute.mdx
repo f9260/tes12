@@ -1,0 +1,80 @@
+# Minute
+
+The minute method allows you to create content from desired durations of the target video.
+
+It has two sub-modes: **Default** and **Range**.
+
+
+
+import Image from 'next/image'
+import metotdakika from 'app-images/metot-dakika.jpg'
+import metotdakikasure from 'app-images/metot-dakika-süre.jpg'
+import metotdakikabolum from 'app-images/metot-dakika-bölüm.jpg'
+
+
+<Image src={metotdakika} />
+
+
+
+
+
+## Default
+
+The default mode allows you to specify the start times of the scenes you want to create segments for.
+
+The desired durations for the operation are added to a notepad separated by commas (e.g., 1:13, 2:46, 7:19, 26:12). 
+The notepad is defined in the system from the **Minutes** section.
+
+
+<Image src={metotdakikasure} />
+
+
+### Example
+
+Let's assume we want to extract 4 scenes from a 30-minute YouTube video.
+
+| URL | youtube.com/video-id |
+| :----- | :----: |
+| Minutes | ```1:13```,```2:46```,```7:19```,```26:12```   |
+| Video Duration/Fixed | 40 |
+| Method | Minute/Default  |
+
+
+### Result
+
+| Video | Start | End |
+| :-----: | :----: | :----: | 
+| 1 | 1:13 | 1:53 |
+| 2 | 2:46 | 3:26 |
+| 3 | 7:19 | 7:59 |
+| 4 | 26:12 | 26:52 |
+
+
+Once the process is complete, the 4 new videos created from the time intervals shown in the table will be saved to the folder you specified on your computer.
+
+
+## Range
+
+If you want to select any time interval instead of entering a **Video Duration**, you can use the **Range** mode.
+
+With this feature, you can specify custom time intervals and save all the scenes you want.
+
+Time intervals should be expressed with a " - " sign, and different scenes should be separated by commas (",").
+
+
+<Image src={metotdakikabolum} />
+
+
+### Example
+
+Let's say we want to create separate content for 6 different scenes from a 3-hour video on our computer.
+
+
+| Videos | C://Path-of-file/file-name.mp4 |
+| :----- | :----: |
+| Minutes | ```14:21-16:35```,```26:19-32:13```,```45:54-56:12```,```58:17-1:16:12```,```1:45:18-2:14:42```,```2:27:13-2:43:19``` |
+| Method | Minute/Range  |
+
+
+
+As a result of this process, 6 contents consisting of the specified time intervals will be created in the designated output folder.

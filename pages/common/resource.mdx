@@ -1,0 +1,64 @@
+import Image from 'next/image'
+import kaynak from 'app-images/kaynak.jpg'
+
+# Resource
+
+
+<Image src={kaynak} />
+
+
+This is the section where the content to be edited is identified.
+
+It contains three options: **Videos**, **URL**, and **URL List**.
+
+## Videos
+
+If we want to perform editing with videos from our computer, we use this option.
+
+Videos are added to a folder, and the folder is defined in the system with this option.
+
+
+## URL
+
+URL is a feature associated with the **Hit Gun** mode, along with URL List.
+
+import { Callout } from 'nextra/components'
+ 
+<Callout type="info" emoji="ℹ️">
+  It can only be used for YouTube videos.
+</Callout>
+
+
+The link to the YouTube video we want to work with is defined in the system from this section.
+
+
+## URL List
+
+If we want to process multiple YouTube videos simultaneously, we use URL List.
+
+After adding the links one below the other in a notepad, the notepad is defined in the system.
+
+
+
+import { Callout } from 'nextra/components'
+ 
+<Callout type="warning" emoji="⚠️">
+
+In Hit Gun mode, there is a sequence of operations for using resources.
+
+</Callout>
+
+
+<Callout type="warning" emoji="⚠️">
+
+If URL List is active, the system disregards other options and attempts to operate through URL List.
+
+</Callout>
+
+<Callout type="warning" emoji="⚠️">
+
+If URL List is passive, the operation proceeds based on the URL. If no link is defined in the URL, the Videos option is used.
+
+</Callout>
+
+
