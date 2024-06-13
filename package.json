@@ -1,9 +1,5 @@
 {
-	"scripts": {
-  "dev": "next",
-  "build": "next build",
-  "start": "next start"
-},
+  "hostname":"guide.ve3.plus",
   "name": "nextra-docs-template",
   "version": "0.0.1",
   "description": "Nextra docs template",
