@@ -4,6 +4,7 @@ const withNextra = require('nextra')({
 })
 
 module.exports = withNextra({
+  basePath:'/tes12',
   output: 'export',
   distDir: 'dist',      // Enables static HTML export
   images: {
